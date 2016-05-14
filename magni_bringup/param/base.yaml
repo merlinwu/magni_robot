@@ -3,10 +3,12 @@ ubiquity_motor:
   serial_baud: 38400 
   controller_loop_rate: 1
   serial_loop_rate: 100
-  pid_proportional: 1000
-  pid_integral: 0
+  pid_proportional: 160
+  pid_integral: 1
   pid_derivative: 0
-  pid_denominator: 10000
+  pid_denominator: 1000
+
+  deadman_timer: 4800000
 
 ubiquity_joint_publisher:
   type: "joint_state_controller/JointStateController"
